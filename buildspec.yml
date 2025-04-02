@@ -6,12 +6,12 @@ phases:
   build:
     commands:
       - echo Build completed on `date`
-      - cd JavaWeb-master
+
       - mvn package
   post_build:
     commands:
       - echo Build completed on `data`
 artifacts:
   files:
-    - JavaWeb-master/target/*.jar
+    - target/*.jar
   discard-paths: yes
